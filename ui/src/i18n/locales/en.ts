@@ -1285,6 +1285,7 @@ export const en: TranslationMap & {
     forkedSession: "Forked session",
     copySessionId: "Session ID",
     copySessionLink: "Session link",
+    copySessionPreviewLink: "Preview link",
     copyMarkdown: "Conversation as Markdown",
     openNewTab: "New tab",
     openNewWindow: "New window",
@@ -1834,6 +1835,7 @@ export const en: TranslationMap & {
     rawTitle: "Edit raw JSON/JSON5 config",
     rawUnavailableTitle: "Raw mode unavailable for this snapshot",
     open: "Open",
+    fileOpenedOnGateway: "Configuration file opened on Gateway host.",
     applying: "Applying…",
     autoSaveSaving: "Saving…",
     autoSaveSaved: "Saved",
@@ -3149,9 +3151,9 @@ export const en: TranslationMap & {
       progress: "{complete} of {total}",
     },
     toolSearch: {
-      title: "Tool Search",
+      title: "Tool Search for all models",
       description:
-        "Keep a bounded tool directory visible and defer the rest behind search, so large MCP and plugin catalogs stop crowding the prompt.",
+        "Local models use Tool Search automatically. Enable this override to defer tool schemas for all models; turning it off restores each model's default.",
     },
     loopDetection: {
       title: "Tool-loop detection",
@@ -3161,7 +3163,7 @@ export const en: TranslationMap & {
     localModelLean: {
       title: "Lean tools for local models",
       description:
-        "Drop heavyweight default tools that smaller local models handle poorly, leaving a shorter set they can use reliably.",
+        "Remove optional tools such as browser and automations. Leave this off to keep those capabilities available through Tool Search.",
     },
     cliAgents: {
       title: "CLI agents",
@@ -5478,6 +5480,12 @@ export const en: TranslationMap & {
       showEarlier: "Show earlier",
       loadingEarlier: "Loading earlier history…",
       noMatches: "No matching messages",
+      positionRail: "Conversation position",
+      positionMarker: "{label}, marker {position} of {count}",
+      positionUserMessage: "User message",
+      positionAssistantMessage: "Assistant message",
+      positionMarkerHint:
+        "Use arrow keys to choose a marker, Enter or Space to jump, and Escape to dismiss the preview.",
     },
     pendingInputs: {
       cancelled:
